@@ -1,0 +1,103 @@
+/* Preserve whitespace and line breaks for pasted content */
+.preserve-whitespace {
+    white-space: pre-line;
+}
+/* Blog tag style */
+.blog-tag {
+    display: inline-block;
+    background: #e3eafc;
+    color: #205493;
+    font-size: 0.85em;
+    padding: 0.15em 0.6em;
+    border-radius: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0.3em;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+/* Blog date style */
+.blog-date {
+    display: block;
+    font-size: 0.95em;
+    color: #888;
+    margin-bottom: 0.3em;
+}
+/* Special style for homepage title link */
+.home-title-link {
+    color: #111 !important;
+    text-decoration: none !important;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+.home-title-link:hover, .home-title-link:focus {
+    color: #111 !important;
+    text-decoration: none !important;
+}
+/* Main layout for two columns */
+.container, body, html {
+.container, body, html {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 17px;
+    color: #222;
+    background: #fafbfc;
+    line-height: 1.6;
+}
+
+a, a:visited {
+    color: #1565c0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #003c8f;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 2em auto;
+    gap: 2em;
+}
+.sidebar {
+    flex: 0 0 240px;
+    background: #f8f8f8;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    text-align: center;
+}
+.main-content {
+    flex: 1 1 0%;
+    background: #fff;
+    padding: 1em 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+/* Make sidebar nav links vertical */
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    margin: 1em 0;
+}
+.sidebar nav a {
+    display: block;
+    padding: 0.3em 0.5em;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.sidebar nav a:hover {
+    background: #e0e0e0;
+}
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .main-content, .sidebar {
+        padding: 1em;
+    }
+}
