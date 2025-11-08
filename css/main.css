@@ -100,4 +100,14 @@ a:hover, a:focus {
     .main-content, .sidebar {
         padding: 1em;
     }
+    .sidebar-links-label {
+        display: none;
+    }
+    .sidebar > *:not(.sidebar-home-link) {
+        display: none;
+    }
+    .sidebar-home-link {
+        display: block;
+        margin: 0 auto;
+    }
 }
